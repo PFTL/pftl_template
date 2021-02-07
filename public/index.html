@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="/build/tailwind.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@200;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="bg-gray-200 h-20 p-4">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="flex-1 flex items-left">
+        <div class="flex-shrink-0 flex items-center">
+          <img class="block h-12 w-auto" src="/images/logo-classic.svg" alt="Workflow">
+        </div>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Forum</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Books</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="inset-y-0 right-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- Icon when menu is closed. -->
+          <!--
+                    Heroicon name: outline/menu
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Icon when menu is open. -->
+          <!--
+                    Heroicon name: outline/x
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="container bg-gray-200 pt-8 px-4 pb-8">
+    <h1 class="text-4xl font-serif font-bold text-gray-700">Learn how to use Python for your lab</h1>
+    <img src="images/header-illustraion.svg" class="w-100 h-auto" />
+    <p class="my-5">
+      Welcome to Python for the Lab. In this website you will find all the information you need to develop scientific
+      software. From controlling experiments to analyzing data.
+      Don't forget to visit the forum and check out our books!
+    </p>
+    <form enctype="multipart/form-data" method="post"
+      action="https://newsletter.privalytics.io/subscribe/6b2a194f-96b3-4ebf-a43a-b7ebeffd872e/" class="mx-4 text-2xl">
+      <div class="">
+        <input type="text" placeholder="Your E-Mail" class="w-full p-2 rounded-md focus:shadow-lg">
+      </div>
+      <input type="submit" class="mt-4 w-full text-white font-bold bg-green-500 hover:bg-green-400 py-2 px-4 rounded"
+        value="Subscribe" />
+    </form>
+  </div>
+  <div class="container bg-white mt-4">
+    <h2 class="text-3xl font-serif text-center">Our Latest Articles</h2>
+    <div class="m-8">
+      <img src="images/post-image-1.png" class="w-full rounded shadow-md">
+      <div class="text-sm font-sans mb-4">June 2020</div>
+      <a href="#" class="hover:underline"><h4 class="text-2xl font-serif font-bold">My Very Cool Title For an Article or more</h4></a>
+      <p class="my-2 text-sm">Importing is not only a matter of using external libraries, but it also allows you to keep your code clean and
+        organized. In this tutorial, we are going to discuss from the very basics of importing to complex topics such as
+        lazy loading of modules in your packages. You are free to skip ahead to the section that compels you the most.
+      </p>
+      <a class="hover:underline text-sm" href="#">Read More</a>
+    </div>
+    <div class="m-8">
+      <img src="images/post-image-2.png" class="w-full rounded shadow-md">
+      <div class="text-sm font-sans mb-4">June 2020</div>
+      <a href="#" class="hover:underline"><h4 class="text-2xl font-serif font-bold">My Very Cool Title For an Article or more</h4></a>
+      <p class="my-2 text-sm">Importing is not only a matter of using external libraries, but it also allows you to keep your code clean and
+        organized. In this tutorial, we are going to discuss from the very basics of importing to complex topics such as
+        lazy loading of modules in your packages. You are free to skip ahead to the section that compels you the most.
+      </p>
+      <a class="hover:underline text-sm" href="#">Read More</a>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="text-center">Want to learn more?</div>
+    <div class="text-center my-4">
+    <a class="p-4 rounded-md shadow-md bg-green-500 hover:bg-green-400 text-white">All Articles</a>
+  </div>
+  </div>
+  <div class="w-full h-20 bg-gray-900 text-white py-4">
+    <div class="text-center mb-1">Python for the Lab © 2021</div>
+    <div class="text-center text-xs"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Cookie Policy</a></div>
+  </div>
+</body>
+
+</html>
